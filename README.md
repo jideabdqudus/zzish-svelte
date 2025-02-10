@@ -1,38 +1,28 @@
-# sv
+# ZZISH Virtual Language Tutor Assigment
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+- Svelte Application:
 
-## Creating a project
+## Links
 
-If you're seeing this, you've probably already done this step. Congrats!
+- [Vercel](https://zzish-svelte.vercel.app/)
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Tech Stack
 
-# create a new project in my-app
-npx sv create my-app
-```
+- Framework: Svelte
+- Styling: Tailwind
 
-## Developing
+## Installation
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+1. Clone the repository
 
-```bash
-npm run dev
+2. Ensure the project runs within the desired node engine:
+   `nvm use`
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+3. Install dependencies
+   `npm install`
 
-## Building
+4. Run development server
+   `npm run dev`
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+5. For testing
+   `npm run test`
