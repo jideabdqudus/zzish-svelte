@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0b4d44;
+  font-family: 'Nunito', serif;
+  cursor: url('/src/lib/assets/cursor.png'), auto;
+}
+
+@layer base {
+  h1 {
+    font-family: 'Feather Bold', sans-serif;
+  }
+}
+
+.custom-cursor {
+  cursor: url('/src/lib/assets/cursor.png'), auto;
+}
