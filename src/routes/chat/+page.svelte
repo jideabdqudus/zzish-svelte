@@ -5,7 +5,7 @@
   import ChatHeader from '../../components/ChatHeader.svelte';
   import ChatMessages from '../../components/ChatMessages.svelte';
   import MessageInput from '../../components/MessageInput.svelte';
-  import ChatFooter from '../../components/ChatFooter.svelte';
+  import Footer from '../../components/Footer.svelte';
 
   let messages = [];
   let newMessage = '';
@@ -138,8 +138,8 @@
   >
     <ChatHeader {selectedLanguage} {languageCode} {answers} />
     <ChatMessages {messages} {isTyping} bind:this={chatContainer} />
-    <MessageInput {newMessage} {sendMessage} {isTyping} />
-    <ChatFooter />
+    <MessageInput bind:newMessage {sendMessage} {isTyping} />
+    <Footer />
   </div>
 </div>
 

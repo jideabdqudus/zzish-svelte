@@ -1,4 +1,5 @@
 <script>
+  import { fade } from 'svelte/transition';
 </script>
 
 <div class="flex justify-start" transition:fade>
