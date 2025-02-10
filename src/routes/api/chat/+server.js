@@ -1,4 +1,3 @@
-// src/routes/api/chat/+server.js
 import OpenAI from 'openai';
 import { json } from '@sveltejs/kit';
 import { env } from '$env/dynamic/private';
