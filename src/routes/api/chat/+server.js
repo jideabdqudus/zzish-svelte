@@ -22,8 +22,8 @@ export async function POST({ request }) {
         },
         ...messages,
       ],
-      temperature: 0.7,
-      max_tokens: 500,
+      temperature: 0.4,
+      max_tokens: 300,
     });
 
     return json(response.choices[0].message);
