@@ -11,7 +11,7 @@ export async function POST({ request }) {
     const { messages, language, fluencyLevel, reason } = await request.json();
 
     const response = await openai.chat.completions.create({
-      model: 'gpt-4-turbo-preview',
+      model: 'gpt-4-turbo',
       messages: [
         {
           role: 'system',
@@ -22,7 +22,7 @@ export async function POST({ request }) {
         },
         ...messages,
       ],
-      temperature: 0.4,
+      temperature: 0.7,
       max_tokens: 300,
     });
 
